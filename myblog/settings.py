@@ -33,8 +33,8 @@ if ENVIRONMENT == 'development':
     DEBUG = True
 else:
     DEBUG = False
-ALLOWED_HOSTS = ['django-blogs.up.railway.app' , 'localhost','127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://django-blogs.up.railway.app']
+ALLOWED_HOSTS = ['inspirehub.up.railway.app' , 'localhost','127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://inspirehub.up.railway.app']
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
@@ -97,9 +97,9 @@ WSGI_APPLICATION = 'myblog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'blogs',
-        'USER':'test_admin',
-        'PASSWORD':'test_admin'
+        'NAME': env('NAME'),
+        'USER':env('USER'),
+        'PASSWORD':env('PASSWORD')
     }
 }
 POSTGRES_LOCALLY = False
