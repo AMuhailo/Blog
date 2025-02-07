@@ -1,0 +1,16 @@
+{% load tags%}
+<h4 class='post-similar py-4'>Liked Posts:</h4>
+{% likes_tag user as likes_post%}
+<div class="row gy-5">
+{% for post in likes_post%}
+    <div class="col-6">
+        <a href="{{ post.get_absolute_url }}" class='text-decoration-none text-dark'>
+            <div class="card-similar">
+                <div class="card-similar-body">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">{{ post.description|truncatewords:5 }}</h6>
+                </div>
+            </div>
+        </a>
+    </div>
+{% endfor %}

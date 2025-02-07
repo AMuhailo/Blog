@@ -1,0 +1,1588 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-01-28T20:38:41.451Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Programming",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-01-28T20:38:51.403Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Sport",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-01-28T20:39:20.846Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Python",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-01-28T20:39:34.968Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Django",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-01-28T20:39:58.286Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "NumPy",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-01-28T20:40:15.164Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "MySQl",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-01-28T20:40:39.345Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "PostgreSQL",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-01-28T20:41:15.590Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Java",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-01-28T20:41:35.436Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Football",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-01-28T20:42:38.470Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Volleyball",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-01-28T20:43:04.621Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Fast Run",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-01-28T20:50:27.396Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Fast Run",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-01-28T20:50:27.396Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Volleyball",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-01-28T20:50:27.396Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Football",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-01-28T20:50:27.396Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Java",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-01-28T20:50:27.396Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "PostgreSQL",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-01-28T20:50:27.396Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "MySQl",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-01-28T20:50:27.396Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "NumPy",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-01-28T20:50:27.396Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Django",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-01-28T20:50:27.396Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Python",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-01-29T09:21:59.693Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Fast Run",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-01-29T15:04:13.805Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Python",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-01-29T15:04:17.739Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Django",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-01-29T15:05:20.216Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "NumPy",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-01-29T15:05:25.059Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Java",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-01-29T15:05:28.523Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Fast Run",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-01-29T15:06:22.007Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Football",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-01-29T15:06:27.910Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "PostgreSQL",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-01-29T15:06:30.613Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "PostgreSQL",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-01-29T15:06:39.456Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "MySQl",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-01-30T23:52:22.751Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "JavaScript",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-01-31T19:31:06.752Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Chess",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"content\", \"object\": \"Content object (None)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-01-31T21:31:49.497Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Cooking",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-02-01T21:45:41.497Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "25",
+    "object_repr": "HTML",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"content\", \"object\": \"Content object (None)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-02-01T22:27:00.696Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "25",
+    "object_repr": "HTML",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-02-01T22:32:20.563Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "adminpc",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add topic",
+    "content_type": 7,
+    "codename": "add_topic"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change topic",
+    "content_type": 7,
+    "codename": "change_topic"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete topic",
+    "content_type": 7,
+    "codename": "delete_topic"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view topic",
+    "content_type": 7,
+    "codename": "view_topic"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 8,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 8,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 8,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 8,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add content",
+    "content_type": 9,
+    "codename": "add_content"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change content",
+    "content_type": 9,
+    "codename": "change_content"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete content",
+    "content_type": 9,
+    "codename": "delete_content"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view content",
+    "content_type": 9,
+    "codename": "view_content"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add video",
+    "content_type": 10,
+    "codename": "add_video"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change video",
+    "content_type": 10,
+    "codename": "change_video"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete video",
+    "content_type": 10,
+    "codename": "delete_video"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view video",
+    "content_type": 10,
+    "codename": "view_video"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add image",
+    "content_type": 11,
+    "codename": "add_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change image",
+    "content_type": 11,
+    "codename": "change_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete image",
+    "content_type": 11,
+    "codename": "delete_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view image",
+    "content_type": 11,
+    "codename": "view_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add text",
+    "content_type": 12,
+    "codename": "add_text"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change text",
+    "content_type": 12,
+    "codename": "change_text"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete text",
+    "content_type": 12,
+    "codename": "delete_text"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view text",
+    "content_type": 12,
+    "codename": "view_text"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add comments",
+    "content_type": 13,
+    "codename": "add_comments"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change comments",
+    "content_type": 13,
+    "codename": "change_comments"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete comments",
+    "content_type": 13,
+    "codename": "delete_comments"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view comments",
+    "content_type": 13,
+    "codename": "view_comments"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$SLLKDrWa3Wjf2XDIIAn1kz$ULLEiOG1bSohDfC79FrZeWW28CO+cneHhtpzbuRZ3/E=",
+    "last_login": "2025-02-01T16:09:52Z",
+    "is_superuser": true,
+    "username": "adminpc",
+    "first_name": "Михайло",
+    "last_name": "Ішков",
+    "email": "amuhailo25@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-01-28T20:37:50Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "blogs",
+    "model": "topic"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "blogs",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "blogs",
+    "model": "content"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "blogs",
+    "model": "video"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "blogs",
+    "model": "image"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "blogs",
+    "model": "text"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "blogs",
+    "model": "comments"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "727sobd4zt2ls2g4ruemcmlxoktykixk",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlne-LuU9JzB2o3XJIASKU4qxN0hUgpo38y8l8q0rUPemix5LOqsQJ1-N6b-IdMOyp2m26z7eVqXkfWu6IM2fZ2LPC-H-3cwUBu-dbQUA3aSgJkkpIS2eqiJsSums5WFgwcLJlVfyIGESOgQeovGGbHq_QHXuzdL:1teG48:CnCpZijtC4tOVMVgmGTfWcD2zCSBf_2urz25MhQHoXg",
+    "expire_date": "2025-02-15T16:09:52.632Z"
+  }
+},
+{
+  "model": "blogs.topic",
+  "pk": 1,
+  "fields": {
+    "title": "Programming",
+    "slug": "programming"
+  }
+},
+{
+  "model": "blogs.topic",
+  "pk": 2,
+  "fields": {
+    "title": "Sport",
+    "slug": "sport"
+  }
+},
+{
+  "model": "blogs.topic",
+  "pk": 3,
+  "fields": {
+    "title": "Cooking",
+    "slug": "cooking"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 1,
+  "fields": {
+    "topic": 1,
+    "title": "Python",
+    "slug": "python",
+    "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. In nostra duis fusce dictum eu per nunc. Enim leo elementum felis sapien molestie arcu feugiat sollicitudin dolor. Dignissim cras cubilia feugiat velit varius ridiculus montes. Dignissim praesent facilisis parturient, suspendisse at praesent cubilia vivamus. Finibus lacinia dis mi per eleifend potenti bibendum hendrerit volutpat. Class turpis congue, nulla erat duis fames auctor class. Eros faucibus sit nec mauris etiam quisque. Luctus lectus dapibus ligula facilisi mauris duis.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-28T20:39:20.844Z",
+    "updated": "2025-01-28T20:39:20.844Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 2,
+  "fields": {
+    "topic": 1,
+    "title": "Django",
+    "slug": "django",
+    "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. In nostra duis fusce dictum eu per nunc. Enim leo elementum felis sapien molestie arcu feugiat sollicitudin dolor. Dignissim cras cubilia feugiat velit varius ridiculus montes. Dignissim praesent facilisis parturient, suspendisse at praesent cubilia vivamus. Finibus lacinia dis mi per eleifend potenti bibendum hendrerit volutpat. Class turpis congue, nulla erat duis fames auctor class. Eros faucibus sit nec mauris etiam quisque. Luctus lectus dapibus ligula facilisi mauris duis.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-28T20:39:34.967Z",
+    "updated": "2025-01-28T20:39:34.967Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 3,
+  "fields": {
+    "topic": 1,
+    "title": "NumPy",
+    "slug": "numpy",
+    "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis volutpat cursus interdum curabitur taciti est mattis tortor. Vehicula sagittis dis mauris mattis non ex torquent. Massa dolor tempus proin tellus pretium. Congue augue sapien feugiat nec sapien est non lacinia. Lobortis luctus odio ridiculus dictum velit molestie risus. Magna neque vestibulum proin velit faucibus mollis. Fermentum est torquent posuere, phasellus ullamcorper sapien platea dapibus dignissim? Dapibus sociosqu gravida curae lorem donec efficitur cursus facilisis nisi. Aet penatibus aliquam viverra fermentum quisque consequat eget habitasse. Metus leo cursus hendrerit; imperdiet suscipit enim. Luctus ultrices mus donec dui facilisi efficitur vitae. Nisl risus facilisi dignissim augue sociosqu hendrerit curabitur.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-28T20:39:58.285Z",
+    "updated": "2025-01-28T20:39:58.285Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 4,
+  "fields": {
+    "topic": 1,
+    "title": "MySQl",
+    "slug": "mysql",
+    "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Quam scelerisque neque quisque purus ligula at malesuada. Magnis proin duis, sociosqu auctor integer id. Ante condimentum vel; mauris per nisi dapibus et. Nibh aenean netus natoque; primis mattis vitae a senectus. Nascetur tristique ut ultricies netus fusce pulvinar. Rhoncus finibus dolor est ornare lobortis dui quam? Arcu cras interdum urna ultricies vivamus rutrum cursus tellus? Habitant conubia risus molestie pharetra suspendisse ultricies bibendum cursus ridiculus.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-28T20:40:15.163Z",
+    "updated": "2025-01-28T20:40:15.163Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 5,
+  "fields": {
+    "topic": 1,
+    "title": "PostgreSQL",
+    "slug": "postgresql",
+    "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Quam scelerisque neque quisque purus ligula at malesuada. Magnis proin duis, sociosqu auctor integer id. Ante condimentum vel; mauris per nisi dapibus et. Nibh aenean netus natoque; primis mattis vitae a senectus. Nascetur tristique ut ultricies netus fusce pulvinar. Rhoncus finibus dolor est ornare lobortis dui quam? Arcu cras interdum urna ultricies vivamus rutrum cursus tellus? Habitant conubia risus molestie pharetra suspendisse ultricies bibendum cursus ridiculus.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-28T20:40:39.343Z",
+    "updated": "2025-01-28T20:40:39.343Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 6,
+  "fields": {
+    "topic": 1,
+    "title": "Java",
+    "slug": "java",
+    "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis volutpat cursus interdum curabitur taciti est mattis tortor. Vehicula sagittis dis mauris mattis non ex torquent. Massa dolor tempus proin tellus pretium. Congue augue sapien feugiat nec sapien est non lacinia. Lobortis luctus odio ridiculus dictum velit molestie risus. Magna neque vestibulum proin velit faucibus mollis. Fermentum est torquent posuere, phasellus ullamcorper sapien platea dapibus dignissim? Dapibus sociosqu gravida curae lorem donec efficitur cursus facilisis nisi. Aet penatibus aliquam viverra fermentum quisque consequat eget habitasse. Metus leo cursus hendrerit; imperdiet suscipit enim. Luctus ultrices mus donec dui facilisi efficitur vitae. Nisl risus facilisi dignissim augue sociosqu hendrerit curabitur.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-28T20:41:15.589Z",
+    "updated": "2025-01-28T20:41:15.589Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 7,
+  "fields": {
+    "topic": 2,
+    "title": "Football",
+    "slug": "football",
+    "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Quam scelerisque neque quisque purus ligula at malesuada. Magnis proin duis, sociosqu auctor integer id. Ante condimentum vel; mauris per nisi dapibus et. Nibh aenean netus natoque; primis mattis vitae a senectus. Nascetur tristique ut ultricies netus fusce pulvinar. Rhoncus finibus dolor est ornare lobortis dui quam? Arcu cras interdum urna ultricies vivamus rutrum cursus tellus? Habitant conubia risus molestie pharetra suspendisse ultricies bibendum cursus ridiculus.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-28T20:41:35.435Z",
+    "updated": "2025-01-28T20:41:35.435Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 8,
+  "fields": {
+    "topic": 2,
+    "title": "Volleyball",
+    "slug": "volleyball",
+    "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Turpis iaculis morbi per sapien lorem placerat. Magnis tincidunt sed; laoreet venenatis hendrerit lacus litora. Pretium conubia senectus at scelerisque in ac? Justo euismod parturient in mauris duis efficitur donec ad.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-28T20:42:38.470Z",
+    "updated": "2025-01-28T20:42:38.470Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 9,
+  "fields": {
+    "topic": 2,
+    "title": "Fast Run",
+    "slug": "fast-run",
+    "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Mattis volutpat cursus interdum curabitur taciti est mattis tortor. Vehicula sagittis dis mauris mattis non ex torquent. Massa dolor tempus proin tellus pretium. Congue augue sapien feugiat nec sapien est non lacinia. Lobortis luctus odio ridiculus dictum velit molestie risus. Magna neque vestibulum proin velit faucibus mollis. Fermentum est torquent posuere, phasellus ullamcorper sapien platea dapibus dignissim? Dapibus sociosqu gravida curae lorem donec efficitur cursus facilisis nisi. Aet penatibus aliquam viverra fermentum quisque consequat eget habitasse. Metus leo cursus hendrerit; imperdiet suscipit enim. Luctus ultrices mus donec dui facilisi efficitur vitae. Nisl risus facilisi dignissim augue sociosqu hendrerit curabitur.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-28T20:43:04.621Z",
+    "updated": "2025-01-28T20:43:04.621Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 10,
+  "fields": {
+    "topic": 2,
+    "title": "Chess",
+    "slug": "chess",
+    "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-29T20:29:49.164Z",
+    "updated": "2025-01-29T20:29:49.164Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 11,
+  "fields": {
+    "topic": 2,
+    "title": "Box",
+    "slug": "box",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-29T20:32:06.311Z",
+    "updated": "2025-01-29T20:32:06.311Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 12,
+  "fields": {
+    "topic": 1,
+    "title": "Ruby",
+    "slug": "ruby",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet ultricies nulla. Nunc efficitur quam et quam luctus finibus. Mauris gravida quis neque euismod scelerisque. Phasellus leo elit, pellentesque eu ante non, luctus accumsan neque. In in justo at dui placerat efficitur sit amet at orci. Ut et placerat augue. Proin nisl diam, porttitor vitae enim quis, facilisis ullamcorper tellus. Morbi a arcu sit amet augue consequat feugiat. Suspendisse venenatis tellus id velit tempor, eget dictum nibh gravida.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-29T20:56:28.854Z",
+    "updated": "2025-01-29T20:56:28.854Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 15,
+  "fields": {
+    "topic": 2,
+    "title": "Swimming",
+    "slug": "swimming",
+    "description": "Swimming is the self-propulsion of a person through water or other liquid, such as saltwater or freshwater environments, usually for recreation, sport, exercise. Swimmers achieve locomotion by coordinating limb and body movements to achieve hydrodynamic thrust that results in directional motion. Newborns can instinctively hold their breath underwater and rudimentary swimming movements as part of a survival reflex.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-31T20:59:57.117Z",
+    "updated": "2025-01-31T20:59:57.117Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 16,
+  "fields": {
+    "topic": 3,
+    "title": "Cake",
+    "slug": "cake",
+    "description": "Cake is a flour confection made from flour, sugar, and other ingredients and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate and which share features with desserts such as pastries, meringues, custards, and pies.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-31T21:32:17.196Z",
+    "updated": "2025-01-31T21:32:17.196Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 17,
+  "fields": {
+    "topic": 3,
+    "title": "Cookies",
+    "slug": "cookies",
+    "description": "A cookie (American English) or biscuit (British English) is a baked snack or dessert that is typically small, flat, and sweet. It usually contains flour, sugar, egg, and some type of oil, fat, or butter. It may include other ingredients such as raisins, oats, chocolate chips, or nuts.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-31T21:34:50.889Z",
+    "updated": "2025-01-31T21:34:50.889Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 18,
+  "fields": {
+    "topic": 3,
+    "title": "Pancake",
+    "slug": "pancake",
+    "description": "A pancake, also known as a hotcake, griddlecake, or flapjack, is a flat cake, often thin and round, prepared from a starch-based batter that may contain eggs, milk, and butter, and then cooked on a hot surface such as a griddle or frying pan. It is a type of batter bread. Archaeological evidence suggests that pancakes were probably eaten in prehistoric societies.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-31T21:43:04.565Z",
+    "updated": "2025-01-31T21:43:04.565Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 19,
+  "fields": {
+    "topic": 3,
+    "title": "Hamburger",
+    "slug": "hamburger",
+    "description": "A hamburger, or simply a burger, is a dish consisting of fillings—usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll. The patties are often served with cheese, lettuce, tomato, onion, pickles, bacon, or chilis with condiments such as ketchup, mustard, mayonnaise, relish or a \"special sauce\", often a variation of Thousand Island dressing, and are frequently placed on sesame seed buns. A hamburger patty topped with cheese is called a cheeseburger.[1] Under some definitions, and in some cultures, a burger is considered a sandwich.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-31T21:44:56.199Z",
+    "updated": "2025-01-31T21:44:56.199Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 20,
+  "fields": {
+    "topic": 3,
+    "title": "Sponge cake",
+    "slug": "sponge-cake",
+    "description": "Sponge cake is a light cake made with eggs, flour and sugar,[1] sometimes leavened with baking powder.[2] Some sponge cakes do not contain egg yolks, like angel food cake, but most of them do. Sponge cakes, leavened with beaten eggs, originated during the Renaissance, possibly in Spain.[3] The sponge cake is thought to be one of the first non-yeasted cakes, and the earliest attested sponge cake recipe in English is found in a book by the British poet Gervase Markham, The English Huswife, Containing the Inward and Outward Virtues Which Ought to Be in a Complete Woman (1615).[4] Still, the cake was much more like a cracker: thin and crispy. Sponge cakes became the cake recognised today when bakers started using beaten eggs as a rising agent in the mid-18th century. The Victorian creation of baking powder by British food manufacturer Alfred Bird in 1843 allowed the addition of butter to the traditional sponge recipe, resulting in the creation of the Victoria sponge. Cakes are available in many flavours and have many recipes as well. Sponge cakes have become snack cakes via the Twinkie.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-31T22:43:15.746Z",
+    "updated": "2025-01-31T22:43:15.746Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 21,
+  "fields": {
+    "topic": 3,
+    "title": "Sponge cake",
+    "slug": "sponge-cake",
+    "description": "Sponge cake is a light cake made with eggs, flour and sugar,[1] sometimes leavened with baking powder.[2] Some sponge cakes do not contain egg yolks, like angel food cake, but most of them do. Sponge cakes, leavened with beaten eggs, originated during the Renaissance, possibly in Spain.[3] The sponge cake is thought to be one of the first non-yeasted cakes, and the earliest attested sponge cake recipe in English is found in a book by the British poet Gervase Markham, The English Huswife, Containing the Inward and Outward Virtues Which Ought to Be in a Complete Woman (1615).[4] Still, the cake was much more like a cracker: thin and crispy. Sponge cakes became the cake recognised today when bakers started using beaten eggs as a rising agent in the mid-18th century. The Victorian creation of baking powder by British food manufacturer Alfred Bird in 1843 allowed the addition of butter to the traditional sponge recipe, resulting in the creation of the Victoria sponge. Cakes are available in many flavours and have many recipes as well. Sponge cakes have become snack cakes via the Twinkie.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-31T22:43:40.379Z",
+    "updated": "2025-01-31T22:43:40.379Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 22,
+  "fields": {
+    "topic": 3,
+    "title": "Sponge cake",
+    "slug": "sponge-cake",
+    "description": "Sponge cake is a light cake made with eggs, flour and sugar,[1] sometimes leavened with baking powder.[2] Some sponge cakes do not contain egg yolks, like angel food cake, but most of them do. Sponge cakes, leavened with beaten eggs, originated during the Renaissance, possibly in Spain.[3] The sponge cake is thought to be one of the first non-yeasted cakes, and the earliest attested sponge cake recipe in English is found in a book by the British poet Gervase Markham, The English Huswife, Containing the Inward and Outward Virtues Which Ought to Be in a Complete Woman (1615).[4] Still, the cake was much more like a cracker: thin and crispy. Sponge cakes became the cake recognised today when bakers started using beaten eggs as a rising agent in the mid-18th century. The Victorian creation of baking powder by British food manufacturer Alfred Bird in 1843 allowed the addition of butter to the traditional sponge recipe, resulting in the creation of the Victoria sponge. Cakes are available in many flavours and have many recipes as well. Sponge cakes have become snack cakes via the Twinkie.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-31T22:44:11.369Z",
+    "updated": "2025-01-31T22:44:11.369Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 23,
+  "fields": {
+    "topic": 3,
+    "title": "Doner kebab",
+    "slug": "doner-kebab",
+    "description": "Doner kebab or döner kebab is a dish of Turkish origin made of meat cooked on a vertical rotisserie. Seasoned meat stacked in the shape of an inverted cone is turned slowly on the rotisserie, next to a vertical cooking element. The operator uses a knife to slice thin shavings from the outer layer of the meat as it cooks. The vertical rotisserie was invented in the 19th-century Ottoman Empire, and dishes such as the Arab shawarma, Greek gyros, Canadian donair, and Mexican al pastor are derived from this.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-31T22:48:33.947Z",
+    "updated": "2025-01-31T22:48:33.947Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 24,
+  "fields": {
+    "topic": 1,
+    "title": "C++",
+    "slug": "c",
+    "description": "C++  is a high-level, general-purpose programming language created by Danish computer scientist Bjarne Stroustrup. First released in 1985 as an extension of the C programming language, it has since expanded significantly over time; as of 1997, C++ has object-oriented, generic, and functional features, in addition to facilities for low-level memory manipulation for systems like microcomputers or to make operating systems like Linux or Windows. It is usually implemented as a compiled language, and many vendors provide C++ compilers, including the Free Software Foundation, LLVM, Microsoft, Intel, Embarcadero, Oracle, and IBM.",
+    "author": 1,
+    "active": true,
+    "created": "2025-01-31T23:22:05.707Z",
+    "updated": "2025-01-31T23:22:05.707Z"
+  }
+},
+{
+  "model": "blogs.post",
+  "pk": 25,
+  "fields": {
+    "topic": 1,
+    "title": "HTML",
+    "slug": "html",
+    "description": "Hypertext Markup Language (HTML) is the standard markup language[a] for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript, a programming language.",
+    "author": 1,
+    "active": true,
+    "created": "2025-02-01T14:18:11.443Z",
+    "updated": "2025-02-01T14:18:11.443Z"
+  }
+},
+{
+  "model": "blogs.content",
+  "pk": 5,
+  "fields": {
+    "post": 11,
+    "content_ct": 12,
+    "content_id": 5
+  }
+},
+{
+  "model": "blogs.content",
+  "pk": 6,
+  "fields": {
+    "post": 10,
+    "content_ct": 12,
+    "content_id": 6
+  }
+},
+{
+  "model": "blogs.content",
+  "pk": 8,
+  "fields": {
+    "post": 11,
+    "content_ct": 11,
+    "content_id": 2
+  }
+},
+{
+  "model": "blogs.content",
+  "pk": 9,
+  "fields": {
+    "post": 12,
+    "content_ct": 12,
+    "content_id": 7
+  }
+},
+{
+  "model": "blogs.content",
+  "pk": 10,
+  "fields": {
+    "post": 24,
+    "content_ct": 12,
+    "content_id": 8
+  }
+},
+{
+  "model": "blogs.content",
+  "pk": 12,
+  "fields": {
+    "post": 11,
+    "content_ct": 12,
+    "content_id": 9
+  }
+},
+{
+  "model": "blogs.text",
+  "pk": 1,
+  "fields": {
+    "author": 1,
+    "created": "2025-01-30T23:50:54.021Z",
+    "updated": "2025-01-30T23:50:54.021Z",
+    "body": "JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.[10]\r\n\r\nWeb browsers have a dedicated JavaScript engine that executes the client code. These engines are also utilized in some servers and a variety of apps. The most popular runtime system for non-browser usage is Node.js.\r\n\r\nJavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[11] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).\r\n\r\nThe ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.\r\n\r\nAlthough Java and JavaScript are similar in name and syntax, the two languages are distinct and differ greatly in design."
+  }
+},
+{
+  "model": "blogs.text",
+  "pk": 2,
+  "fields": {
+    "author": 1,
+    "created": "2025-01-30T23:51:26.125Z",
+    "updated": "2025-01-30T23:51:26.125Z",
+    "body": "JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.[10]\r\n\r\nWeb browsers have a dedicated JavaScript engine that executes the client code. These engines are also utilized in some servers and a variety of apps. The most popular runtime system for non-browser usage is Node.js.\r\n\r\nJavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[11] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).\r\n\r\nThe ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.\r\n\r\nAlthough Java and JavaScript are similar in name and syntax, the two languages are distinct and differ greatly in design."
+  }
+},
+{
+  "model": "blogs.text",
+  "pk": 3,
+  "fields": {
+    "author": 1,
+    "created": "2025-01-30T23:51:29.574Z",
+    "updated": "2025-01-30T23:51:29.574Z",
+    "body": "JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.[10]\r\n\r\nWeb browsers have a dedicated JavaScript engine that executes the client code. These engines are also utilized in some servers and a variety of apps. The most popular runtime system for non-browser usage is Node.js.\r\n\r\nJavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[11] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).\r\n\r\nThe ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.\r\n\r\nAlthough Java and JavaScript are similar in name and syntax, the two languages are distinct and differ greatly in design."
+  }
+},
+{
+  "model": "blogs.text",
+  "pk": 4,
+  "fields": {
+    "author": 1,
+    "created": "2025-01-30T23:51:58.986Z",
+    "updated": "2025-01-30T23:51:58.986Z",
+    "body": "JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.[10]\r\n\r\nWeb browsers have a dedicated JavaScript engine that executes the client code. These engines are also utilized in some servers and a variety of apps. The most popular runtime system for non-browser usage is Node.js.\r\n\r\nJavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[11] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).\r\n\r\nThe ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.\r\n\r\nAlthough Java and JavaScript are similar in name and syntax, the two languages are distinct and differ greatly in design."
+  }
+},
+{
+  "model": "blogs.text",
+  "pk": 5,
+  "fields": {
+    "author": 1,
+    "created": "2025-01-30T23:52:48.527Z",
+    "updated": "2025-01-30T23:52:48.527Z",
+    "body": "Vestibulum sollicitudin ligula massa, eu sagittis nisl feugiat ornare. Praesent sit amet tortor vel urna aliquam ultrices vitae in sapien. Duis viverra ligula eget ante faucibus finibus. Sed at lacinia sem. Donec sed eros leo. Integer et arcu bibendum, mattis justo elementum, iaculis enim. Curabitur tortor velit, efficitur nec massa in, consectetur convallis nunc. Nullam consectetur ut metus non aliquet. Cras enim nunc, euismod porta purus sed, luctus bibendum odio. Nullam a lobortis neque. Aenean hendrerit turpis ut commodo mattis. Sed lobortis ac erat aliquet pulvinar. Duis vitae lacus eleifend, lacinia orci pretium, dapibus ligula. Maecenas bibendum gravida commodo.\r\n\r\nNullam sodales dui non dolor fermentum blandit. Pellentesque semper ante non elit dapibus, in facilisis purus efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam hendrerit in ex vitae rutrum. Pellentesque scelerisque interdum justo vitae facilisis. Nulla at tincidunt sem. Donec feugiat varius dolor id laoreet. Mauris vitae nisi lectus. Morbi pellentesque sed lacus et rhoncus."
+  }
+},
+{
+  "model": "blogs.text",
+  "pk": 6,
+  "fields": {
+    "author": 1,
+    "created": "2025-01-31T00:04:13.784Z",
+    "updated": "2025-01-31T00:04:13.784Z",
+    "body": "Suspendisse a eros tempor, consequat metus sit amet, porttitor sapien. Fusce venenatis imperdiet lectus eget molestie. Donec interdum, ligula et ultrices malesuada, augue arcu hendrerit enim, eu tincidunt dui diam at neque. Quisque et faucibus magna. Phasellus sodales libero maximus quam condimentum dignissim. In faucibus, elit in luctus porttitor, mauris eros vehicula lorem, sit amet bibendum urna tellus eu dolor. Etiam rutrum arcu at est faucibus, at placerat velit interdum. Nam volutpat pharetra tristique. Sed laoreet condimentum commodo. Donec semper sem lacus, a tempus elit pulvinar vitae. Mauris ut faucibus justo. Sed dapibus magna lectus, nec ultricies lectus consectetur at. Nam ut urna ut metus accumsan porttitor. Vivamus in consectetur velit, ac mattis justo. Phasellus sit amet metus tincidunt, iaculis ex at, tincidunt turpis. Nullam tincidunt purus lectus, sed porttitor sem dignissim vel.\r\n\r\nCurabitur eget gravida velit, et aliquam nisl. Integer pharetra dui at ipsum interdum tristique. Nullam vehicula posuere dui, sagittis vulputate dui fringilla non. Sed tempor ante eget vulputate vestibulum. Donec vehicula pretium ante, at vehicula enim ultricies id. Donec imperdiet arcu massa, vel consectetur arcu venenatis id. Cras bibendum sodales libero quis vulputate."
+  }
+},
+{
+  "model": "blogs.text",
+  "pk": 7,
+  "fields": {
+    "author": 1,
+    "created": "2025-01-31T20:45:16.209Z",
+    "updated": "2025-01-31T20:45:16.209Z",
+    "body": "Ruby is an interpreted, high-level, general-purpose programming language. It was designed with an emphasis on programming productivity and simplicity. In Ruby, everything is an object, including primitive data types. It was developed in the mid-1990s by Yukihiro \"Matz\" Matsumoto in Japan.\r\n\r\nRuby is dynamically typed and uses garbage collection and just-in-time compilation. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. According to the creator, Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, BASIC, and Lisp."
+  }
+},
+{
+  "model": "blogs.text",
+  "pk": 8,
+  "fields": {
+    "author": 1,
+    "created": "2025-02-01T14:10:33.948Z",
+    "updated": "2025-02-01T14:10:33.948Z",
+    "body": "C++ was designed with systems programming and embedded, resource-constrained software and large systems in mind, with performance, efficiency, and flexibility of use as its design highlights.[15] C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications,[15] including desktop applications, video games, servers (e.g., e-commerce, web search, or databases), and performance-critical applications (e.g., telephone switches or space probes)."
+  }
+},
+{
+  "model": "blogs.text",
+  "pk": 9,
+  "fields": {
+    "author": 1,
+    "created": "2025-02-01T16:09:16.635Z",
+    "updated": "2025-02-01T16:09:16.635Z",
+    "body": "Humans have engaged in hand-to-hand combat since the earliest days of human history. The origins of boxing in any of its forms as a sport remain uncertain,[4] but some sources suggest that it has prehistoric roots in what is now Ethiopia, emerging as early as the sixth millennium BC. It is believed that when the Egyptians invaded Nubia, they adopted boxing from the local populace, subsequently popularizing it in Egypt. From there, the sport of boxing spread to various regions, including Greece, eastward to Mesopotamia, and northward to Rome."
+  }
+},
+{
+  "model": "blogs.image",
+  "pk": 1,
+  "fields": {
+    "author": 1,
+    "created": "2025-01-31T00:04:50.921Z",
+    "updated": "2025-01-31T00:04:50.921Z",
+    "image": "content/image/boxing-active-young-men-box-600w-250482073.webp"
+  }
+},
+{
+  "model": "blogs.image",
+  "pk": 2,
+  "fields": {
+    "author": 1,
+    "created": "2025-01-31T19:37:06.817Z",
+    "updated": "2025-01-31T19:37:06.817Z",
+    "image": "content/image/boxing-active-young-men-box-600w-250482073_6IHJy3g.webp"
+  }
+},
+{
+  "model": "blogs.image",
+  "pk": 3,
+  "fields": {
+    "author": 1,
+    "created": "2025-02-01T14:21:47.311Z",
+    "updated": "2025-02-01T14:21:47.311Z",
+    "image": "content/image/images.png"
+  }
+}
+]

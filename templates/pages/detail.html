@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% load tags %}
+
+{% block title %} {{ post.title }} Post{% endblock title %}
+{% block content %}
+    <div class="row g-0 m-5" >
+        <div class="col col-md-auto col-lg-3" id = 'detail-info'>
+            {% include "pages/include/detail_info.html" with post=post view=r_view%}
+        </div>
+        {% contents_tag post %}
+        
+        {% similar_tag post%}
+        
+    </div>
+{% endblock content %}

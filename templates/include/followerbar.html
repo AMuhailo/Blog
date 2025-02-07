@@ -1,0 +1,15 @@
+{% load tags %}
+<div class="sitebar-col col-2 col-md-2" style='height:80vh'>
+    <ul class="list-group list-group-flush pe-5">
+        <li class="list-group-item list-group-item-action">
+            <img src="{% if user.profile.image%} {{ user.profile.image.url }}{% else %}/media/profile/image-1.png{% endif %}" class="rounded-circle m-2" width='40px'>
+            <a href="{% url 'following_detail_view_url' user.username %}" class="list-link ">My</a>
+        </li>
+    {% for follow in following %}
+        <li class="list-group-item list-group-item-action">
+            <img src="{% if follow.profile.image%} {{ follow.profile.image.url }}{% else %}/media/profile/image-1.png{% endif %}" class="rounded-circle m-2" width='40px'>
+            <a href="{% url 'following_post_view_url' user.username follow.id %}" class="list-link">{{ follow.username }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</div>

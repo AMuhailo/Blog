@@ -1,0 +1,8 @@
+{% load static %}
+{% for comment in comments %}
+    <div class='comment-item rounded-3 p-3 my-2'>
+        <h5 class='border-bottom p-1'>{{ comment.author.username|default:comment.author.first_name }}</h5>
+        <p>{{ comment.message|truncatewords:20 }}</p>
+        <p class='ms-0 fst-italic lh-sm'>{{ comment.created }}</p>
+    </div>
+{% endfor %}

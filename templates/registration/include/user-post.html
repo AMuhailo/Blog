@@ -1,0 +1,28 @@
+
+{% for post in posts %}
+    <div class="card mb-3" id='post-user'>
+        <h5 class="card-header d-flex justify-content-between">
+            <span>{{ post.topic }}</span>
+            <span>
+                {% if request.user not in post.like_user.all %}
+                    <i class="bi bi-balloon-heart"></i>
+                {% else %}
+                    <i class="bi bi-balloon-heart-fill text-danger"></i>
+                {% endif %}
+                    <b>{{ post.total_like }}</b>
+            </span>
+        </h5>
+        <div class="card-body">
+            <h5 class="card-title">{{ post.title}}</h5>
+            <p class="card-description">{{post.description|truncatewords:20 }}</p>
+            <p>{{ post.total_post}}</p>
+            <a href="{{ post.get_absolute_url }}" class="btn btn-primary btn-profile-post btn-sm">View</a>
+        </div>
+    </div>
+{% empty %}
+    {% if request.user %}
+        You haven`t post. Please add post!
+    {% else %}
+        It`s profile haven`t posts! 
+    {% endif %}
+{% endfor %}

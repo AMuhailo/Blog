@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    Add content {{object}}
+{% endblock title %}
+{% block content %}
+<div class='mx-auto my-5 w-50 login-form px-4 py-2 border'>
+    <h4 class='post-title'>
+        <span class='icon-back'>
+            <a href="{% url 'blogs:post_detail_view_url' post.slug post.id %}" class="text-decoration-none"><i class="bi bi-arrow-bar-left"></i></a>
+        </span>
+        {{ post.title }}
+    </h4>
+    <p class='fs-5'>Add content for your post.</p>
+    <form method="POST" enctype='multipart/form-data'>
+        {% csrf_token %}
+        {% if form_content.body %}
+            <div class="form-floating mb-4">
+                <textarea name='body' class="form-control" placeholder="Add content text...." id="textarea_content" style="height: 200px"></textarea>
+                <label for="textarea_content">{{ form_content.body.label_tag}}</label>
+                <button type='submit' class='btn btn-success my-2'>Add content</button>
+            </div>
+        {% elif form_content.image %}
+            <div class="input-group">
+                <input type="file" class="form-control" id="image_content" aria-describedby="image_content" aria-label="Upload" name='image'>
+                <button class="btn btn-outline-success" type="submit" id="image_content">Button</button>
+            </div>
+        {% else %}
+            <div class="input-group mb-3">
+                <input type="url" class="form-control" placeholder="URL video...." aria-label="Example text with button addon" aria-describedby="video_content" name='video'>
+                <button class="btn btn-outline-success" type="submit" id="video_content">Button</button>
+            </div>
+        {% endif %}
+    </form>
+</div>
+{% endblock content %}

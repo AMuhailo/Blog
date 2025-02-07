@@ -1,0 +1,14 @@
+<ul class="dropdown-menu px-3" style="width:16rem;">
+    <h6>Actions users:</h6>
+    {% if actions %}
+        {% for action in actions %}
+            <li class='w-100'>
+                <span class="text-capitalize fw-normal">{{action.user}}</span> 
+                <span class="fw-semibold">{{ action.venv }} to</span>  
+                <span class='text-primary'>{{ action.actions }}</span>
+            </li>
+        {% endfor %}
+    {% else %}
+        Don`t found!
+    {% endif %}
+</ul>

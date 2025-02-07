@@ -1,0 +1,12 @@
+<div class='my-5'>
+    {% with count=comments.count %}
+    <h4 class='border-top pt-4'>Comments {{count}}</h4>
+    <form method="POST">
+        {% csrf_token %}
+        {{ comment_form.message}}
+        {% if request.user.is_authenticated %}
+        <button hx-post="{% url 'blogs:post_comment_list_view' post.slug post.id%}" hx-target="#comment-list" type='submit' class='btn btn-primary btn-sm rounded-4'>Add</button>
+        {% endif %}
+    </form>
+    {% endwith %}
+</div>

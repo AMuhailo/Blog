@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% load tags %}
+{% block title %}
+    Profile " {{ user.username|default:request.user.get_full_name }}"
+{% endblock title %}
+
+{% block content %}
+<div class="row gap-5 m-5" >
+    <div class="col rounded-2">
+        {% include "registration/include/user-info.html" with user=user%}
+    </div>
+    <div class="col-6 overflow-y-scroll" style="height:80vh;">
+        <div class='d-flex justify-content-between my-3'>
+            <span>
+                <h4>You posted:</h4>
+            </span>
+            {% if request.user.username == user.username %}
+            <span>
+                <button class="btn btn-success dropdown-toggle px-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">Create</button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    {% include "forms/createpost.html" with form=form%}
+                </ul>
+            </span>
+            {% endif %}
+        </div>
+        {% creators_tag user %}
+    </div>
+    <div class="col">
+        {% include "registration/include/user-liked.html" with user=user%}
+    </div>
+</div>
+{% endblock content %}

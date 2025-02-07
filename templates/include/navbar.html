@@ -1,0 +1,57 @@
+{% load tags%}
+<header class="container-xxl">
+    <nav class="navbar navbar-expand-lg bg-body-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'dashboard_list_view_url'%}"><i class="bi bi-threads-fill"></i>InspireHub</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'blogs:post_list_view_url'%}">Blogs</a>
+              </li>
+              {% if request.user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'user_list_view' %}">User</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Action
+                </a>
+                {% actions_tag request.user %}
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+              {% endif %}
+            </ul>
+            
+            {% if request.user.is_authenticated %}
+            <img src="{% if request.user.profile.image%} {{ request.user.profile.image.url }}{% else %}/media/profile/image-1.png{% endif %}" class="rounded-circle m-2" width='40px'>
+            <div class="dropdown-center">
+              <button class="text-decoration-none border-0 bg-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ request.user.username|default:request.user.get_full_name}}
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'profile_detail_view_url' request.user%}"><i class="bi bi-person-lines-fill me-3"></i>Profile</a></li>
+                <li><a class="dropdown-item" href="{% url 'following_detail_view_url' request.user%}"><i class="bi bi-subtract me-3"></i>Followers</a></li>
+                <li>
+                  <form class="dropdown-item" action="{% url 'logout'%}" method="POST">
+                    {% csrf_token %}
+                    <button type='submit' class='bg-light border-0'>
+                      <i class="bi bi-box-arrow-in-left me-3"></i>
+                      Logout
+                    </button>
+                  </form>
+                </li>
+              </ul>
+            </div>
+            {% else %}
+              <a href="{% url 'login'%}" class='btn btn-success btn-sm mx-2'>Login</a>
+              <a href="{% url 'register_user_url'%}" class='btn btn-secondary btn-sm mx-2'>Sing-in</a>
+            {% endif %}
+          </div>
+        </div>
+      </nav>
+</header>

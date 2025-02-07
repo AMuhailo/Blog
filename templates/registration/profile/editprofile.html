@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static%}
+{% block title %}
+    Edit profile
+{% endblock title %}
+
+{% block content %}
+    <div class='login-form w-25 mx-auto rounded-2 border shadow p-5 mb-5 bg-body-tertiary'>
+        <h4 class='login-title border-bottom border-5 py-2'>
+            <a href="{% url 'profile_detail_view_url' request.user %}" class="text-decoration-none"><i class="bi bi-arrow-bar-left"></i></a>Edit Profile
+        </h4>
+        <form method="POST" enctype='multipart/form-data'>
+            {% csrf_token %}
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-calendar-week"></i></span>
+                {{ profile_form.birthday}}
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Name</span>
+                {{ user_form.first_name }}
+                {{ user_form.last_name }}
+
+            </div>
+            <div class="input-group mb-3">
+                {{ profile_form.image }}
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon4">@</span>
+                {{ user_form.email }}
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm" style="width:130px;">Edit</button>
+        </form>
+    </div>
+{% endblock content %}

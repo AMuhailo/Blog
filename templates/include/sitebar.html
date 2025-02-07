@@ -1,0 +1,14 @@
+{% load tags %}
+<div class="sitebar-col col-2 col-md-2">
+    <ul class="list-group list-group-flush pe-5">
+        <li class="list-group-item list-group-item-action">
+            <a href="{% url 'blogs:post_list_view_url' %}" class="list-link ">All</a>
+        </li>
+    {% topics_tag as topics %}
+    {% for top in topics %}
+        <li class="list-group-item list-group-item-action">
+            <a href="{{ top.get_absolute_url }}" class="list-link">{{ top.title }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,8 @@
+<div class='profile-card'>
+    <img src="{% if user.profile.image %}{{ user.profile.image.url }}{% else %}/media/profile/image-1.png{% endif %}" class="img-profile">
+    <h4 class="text-capitalize border-bottom pb-2 my-3">{{ user.username}}</h4>
+    <p class='fs-5 my-1'>{{ user.get_full_name}}</p>
+    <p class='fs-5 my-1'><i>{{ user.profile.birthday}}</i></p>
+    <p class='fs-5 my-2'>{{ user.email}}</p>
+    {% include "snippers/follow.html" with user=user %}
+</div>

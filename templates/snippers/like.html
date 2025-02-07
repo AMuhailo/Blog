@@ -1,0 +1,24 @@
+{% load static %}
+<span class='me-4'>
+    
+    {% if request.user.is_authenticated %}
+        <a {% if usertoday != post.author %}hx-get="{% url 'blogs:like_post_url' post.id %}" 
+        hx-target='closest span' 
+        hx-swap="outerHTML"
+        {% endif %}
+        class="text-decoration-none text-dark cursor-pointer">
+            {% if request.user not in post.like_user.all %}
+                <i class="bi bi-balloon-heart"></i>
+            {% else %}
+                <i class="bi bi-balloon-heart-fill text-danger"></i>
+            {% endif %}
+        </a>
+    {% else %}
+        {% if request.user not in post.like_user.all %}
+            <i class="bi bi-balloon-heart"></i>
+        {% else %}
+            <i class="bi bi-balloon-heart-fill text-danger"></i>
+        {% endif %}
+    {%endif %}
+    <b>{{ post.total_like }}</b>
+</span>

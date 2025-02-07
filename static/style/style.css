@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.sitebar-col{
+    height: 80vh
+}
+
+.list-link{
+    font-size: 18px;
+    color:black;
+    font-weight: 400;
+    text-decoration: none;
+    transition: font-weight,font-size 800ms ease-in-out;
+    transition-duration: 4s;
+    transition-delay: 2s;
+}
+
+.list-link:hover{
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+
+
+
+.title-post{
+    margin-left: 1rem;
+    font-size: 24px;
+    width: max-content;
+}
+
+.card-posts{
+    width: 18rem;
+    top:0;
+    transition: transform 2s ease-in;
+}
+
+.card-posts:hover{
+    position: absolute;
+    transform: rotate(4deg);
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgba(247, 247, 247, 0.539);
+}
+
+.card-text{
+    height: 8rem;
+}
+
+.post-title, .post-about, .post-similar{
+    font-size: 36px;
+}
+
+.post-text{
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.card-similar{
+    width:12rem;
+}
+
+.card-similar-body{
+    height: 100px;
+}
+
+.icon-back{
+    font-size: 24px;
+}
+
+.login-form{
+    background-color: rgba(245, 245, 245, 0.6);
+}
+
+.cancel-title{
+    color:red;
+    transition: 1s ease-in-out;
+}
+
+.success-title{
+    color:green;
+    transition: 1s ease-in-out;
+}
+
+.comment-item{
+    background-color: rgba(242, 241, 241, 0.849);
+    border: 2px solid rgba(212, 212, 212, 0.539);
+    cursor: pointer;
+}
+
+
+.profile-card{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-profile{
+    width: 75%;
+    border-radius: 100%;
+    border: 0.3rem solid rgb(103, 103, 103);
+}
+
+.btn-profile-post{
+    width: 6rem;
+}
+
+.card-users{
+    width: 18rem;
+}

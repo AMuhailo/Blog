@@ -1,0 +1,26 @@
+<div class="col">
+    <div class='post-detail' id='post-detail'>
+        <h4 class='post-about py-4'>About this post</h4>
+        <p class='post-text'>
+        <div class='row'>
+        {% if contents %}
+            <div class='content-info clearfix'>
+            {% for content in contents %}
+                {% with item=content.contents content_model=content.content_ct.model %}
+                    {% if content_model == 'text' %}
+                    <p class='mx-2'>{{item.body}}</p>
+                    {% elif content_model == 'image' %}
+                    <img src="{{ item.image.url }}" 
+                    class="col-md-6 {% if item.id|divisibleby:2 %}float-md-end{% else %}float-md-start{% endif %} mb-3 ms-md-3 mb-4">
+                    {% else%}
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
+            </div>
+        {% else %}
+            <p>No content available!</p>
+        {% endif %}
+            </div>
+        </p>
+    </div>     
+</div>

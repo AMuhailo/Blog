@@ -1,0 +1,59 @@
+{% load tags%}
+<div class='post-detail' id='post-detail'>
+    {% with author=post.author %}
+    <h4 class='post-title'>
+        <span class='icon-back'>
+            <a href="{% url 'blogs:post_list_view_url'%}" class="text-decoration-none"><i class="bi bi-arrow-bar-left"></i></a>
+        </span>
+        {{ post.title }}
+    </h4>
+    <h6 class='card-subtitle text-body-secondary border-bottom pb-2 d-flex justify-content-start muted'>
+        <span class="flex-grow-1">
+            <a href="{% url 'blogs:topic_post_list_view_url' post.topic.slug post.topic.id %}" class="text-decoration-none">{{ post.topic.title }}</a>
+        </span>
+        <span class='mx-3'>
+            <i class="bi bi-eye-fill"></i>
+            {{ r_view }}
+        </span>
+        {% include "snippers\like.html"%}
+        <span class="me-0">
+            <button type="button" class="bg-white border-0 text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="bi bi-share"></i>
+            </button>
+        </span>
+    </h6>
+    <p class='post-text'>{{ post.description }}</p>
+    <figcaption class="blockquote-footer py-3 fw-light fs-6">
+        Published {{ post.created }} by {{ author }}</figcaption>
+    
+    {% if request.user == author %}
+    <div class="d-flex justify-content-start gap-3">
+        <div class="btn-group">
+            <button class="btn btn-warning btn-sm px-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                Edit
+            </button>
+        </div>
+        <a class='btn btn-outline-info' href="{% url 'blogs:content_create_view_url' post.id 'text' %}" >
+            <i class="bi bi-text-indent-left"></i>
+        </a>
+        <a class='btn btn-outline-info' href="{% url 'blogs:content_create_view_url' post.id 'image'%}">
+            <i class="bi bi-card-image"></i>
+        </a>
+        {% comment %} <a class='btn btn-outline-info' href="{% url 'blogs:content_create_view_url' post.id 'video'%}">
+            <i class="bi bi-file-earmark-play-fill"></i>
+        </a> {% endcomment %}
+    </div>
+    {% endif %}
+
+
+    {% include "forms/commentpost.html" %}
+    
+    <div id='comment-list'>
+        {% comments_tag post %}
+    </div>
+    {% endwith %}
+</div>
+
+{% include "include/editbar.html" %}
+
+{% include "include/sharebar.html" %}

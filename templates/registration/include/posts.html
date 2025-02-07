@@ -1,0 +1,31 @@
+{% if follow_post %}
+{% for post in follow_post %}
+    {% with top=post.topic %}
+    <div class="col position-relative">
+        <div class="card-posts card shadow bg-body-tertiary rounded" >
+            <div class="card-body">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <h6 class="card-subtitle mb-2">
+                    <a href="{% url 'blogs:topic_post_list_view_url' top.slug top.id %}"
+                    class='text-decoration-none  text-body-secondary'>{{ top.title }}</a>
+                </h6>
+                <p class="card-text">{{ post.description|truncatewords:20 }}</p>
+                <div class='d-flex justify-content-between'>
+                    <a href="{{ post.get_absolute_url }}" class="btn btn-secondary rounded-5 btn-sm w-25">View</a>
+                    <span>
+                        {% if request.user not in post.like_user.all %}
+                            <i class="bi bi-balloon-heart"></i>
+                        {% else %}
+                            <i class="bi bi-balloon-heart-fill text-danger"></i>
+                        {% endif %}
+                        {{post.total_like}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endwith %}
+{% endfor %}
+{% else %}
+<p>Please add a new post</p>
+{% endif %}

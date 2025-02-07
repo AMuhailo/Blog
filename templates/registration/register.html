@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static%}
+{% block title %}
+    Sing-in
+{% endblock title %}
+
+{% block content %}
+    <div class='login-form w-25 mx-auto rounded-2 border shadow p-5 mb-5 bg-body-tertiary'>
+        <h4 class='login-title border-bottom border-5 py-2'>Sing-in</h4>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input name="username"  type='text' class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon2"><i class="bi bi-envelope-check-fill"></i></span>
+                <input name="email"  type='email' class="form-control" placeholder="name@gmail.com" aria-label="Email" aria-describedby="basic-addon2">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3"><i class="bi bi-incognito"></i></span>
+                <input name="password" type='password' class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon3">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon4"><i class="bi bi-incognito"></i></span>
+                <input name="password2" type='password' class="form-control" placeholder="Password 2" aria-label="Password 2" aria-describedby="basic-addon4">
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm" style="width:130px;">Sing-in</button>
+        </form>
+    </div>
+{% endblock content %}

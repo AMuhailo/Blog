@@ -1,0 +1,20 @@
+ <div class='p-4'>
+    {% if post %}
+    <form method='POST' action="{% url 'blogs:post_update_view_url' post.slug post.id%}">
+        {% csrf_token %}
+        <label>{{ form.title.label_tag}}</label>
+        {{ form.title }}
+        <label>{{ form.description.label_tag}}</label>
+        {{ form.description }}
+        <button hx-post"{% url 'blogs:post_update_view_url' post.slug post.id%}" hx-target="#post-detail" type = 'submit' class='btn btn-outline-warning btn-sm'>Update</button>
+    </form>
+    {% else %}
+    <form method='POST' action="{% url 'blogs:post_create_view_url'%}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type = 'submit' class='btn btn-success btn-sm'>Create</button>
+    </form>
+    {% endif %}
+</div>
+
+

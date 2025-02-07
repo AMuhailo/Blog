@@ -1,0 +1,7 @@
+<form method="POST" class="form-floating" action="{% url 'blogs:share_post_url' post.slug post.id %}">
+    {% csrf_token %}
+    {{ share_form.to }}
+    <label for="share_email">Email</label>
+    {{share_form.message}}
+    <button type='submit' class='btn btn-primary btn-sm'>Share</button>
+</form>

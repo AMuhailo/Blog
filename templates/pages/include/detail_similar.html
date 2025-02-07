@@ -1,0 +1,19 @@
+<div class="col col-lg-3 ">
+    <div class='post-similar'>
+        <h4 class='post-similar py-4'>Similar Post</h4>
+        <div class="row gy-5">
+            {% for post in similar_posts%}
+                <div class="col-6">
+                    <a href="{{ post.get_absolute_url }}" class='text-decoration-none text-dark'>
+                        <div class="card-similar">
+                            <div class="card-similar-body">
+                                <h5 class="card-title">{{ post.title }}</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">{{ post.description|truncatewords:5 }}</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+          </div>
+    </div>  
+</div>

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static%}
+{% block title %}
+    Log-in
+{% endblock title %}
+
+{% block content %}
+    <div class='login-form w-25 mx-auto rounded-2 border shadow p-5 mb-5 bg-body-tertiary'>
+        <h4 class='login-title border-bottom border-5 py-2'>Login</h4>
+        <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="id_username" class="form-label">{{ form.username.label_tag }}</label>
+                <input name="username" type="text" class="form-control" id="id_username" placeholder="Username">
+            </div>
+            <div class="mb-3">
+                <label for="id_password" class="form-label">{{ form.password.label_tag }}</label>
+                <input name="password" type="password" class="form-control" id="id_password" placeholder="Your password">
+            </div>
+            {% if form.errors %}
+                <p class="text-danger">Your username or password didn`t match. Please again!</p>
+            {% else %}
+                <p class="text-success">Success login!</p>
+            {% endif %}
+            <button type="submit" class="btn btn-secondary btn-sm" style="width:150px;">Login</button>
+        </form>
+    </div>
+{% endblock content %}
