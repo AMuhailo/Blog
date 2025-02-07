@@ -1,4 +1,5 @@
 .venv/
 __pycache/
-*.sqlite3
-.env
+myblog/.env
+*db.sqlite3
+media/

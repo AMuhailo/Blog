@@ -11,25 +11,29 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 import os
+import dj_database_url
 from pathlib import Path
 from dotenv import load_dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 load_dotenv()
+
+ENVIRONMENT = os.environ.get("ENVIRONMENT", 'production')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = ['*']
-
+if ENVIRONMENT == 'development':
+    DEBUG = True
+else:
+    DEBUG = False
+ALLOWED_HOSTS = ['django-blogs.up.railway.app' , 'localhost','127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://django-blogs.up.railway.app']
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
@@ -43,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'admin_honeypot',
     'blogs.apps.BlogsConfig',
     'account.apps.AccountConfig',
     'action.apps.ActionConfig',
@@ -95,7 +100,9 @@ DATABASES = {
     }
 }
 
-
+POSTGRES_LOCALLY = False
+if ENVIRONMENT == 'production' or POSTGRES_LOCALLY == True:
+    DATABASES['default'] = dj_database_url.parse(os.environ.get('DATABASE_URL'))
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 

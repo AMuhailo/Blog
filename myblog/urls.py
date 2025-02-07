@@ -22,7 +22,8 @@ from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
+    path('bosspages/', admin.site.urls),
     path('accounts/login/', auth_views.LoginView.as_view(), name = 'login'),
     path('accounts/logout/', auth_views.LogoutView.as_view(), name = 'logout'),
     path('', DashBoardListView.as_view(), name='dashboard_list_view_url'),
