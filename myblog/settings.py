@@ -172,9 +172,12 @@ EMAIL_HOST_USER = env('EMAIL_HOST_USER')
 
 LOGIN_REDIRECT_URL = 'dashboard_list_view_url'
 LOGOUT_REDIRECT_URL = 'dashboard_list_view_url'
-
-REDIS_HOST = 'localhost'
-REDIS_PORT = 6379
+if ENVIRONMENT == 'development':
+    REDIS_HOST = 'localhost'
+    REDIS_PORT = 6379
+else:
+    REDIS_HOST = env('REDIS_HOST')
+    REDIS_PORT = env('REDIS_PORT')
 REDIS_DB = 0
 EMAIL_HOST_PASSWORD = 'svlf xkbs ayov slyt'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -183,7 +186,10 @@ EMAIL_HOST_USER = 'amuhailo25@gmail.com'
 
 CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
 CELERY_TIMEZONE = 'Europe/Kyiv'
-CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
+if ENVIRONMENT == 'development':
+    CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
+else:
+    CELERY_BROKER_URL = env('REDIS_URL')
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERYD_FORCE_EXECV = True
