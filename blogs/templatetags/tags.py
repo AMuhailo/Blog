@@ -12,7 +12,7 @@ def topics_tag():
     return Topic.objects.all()
 
 
-@register.inclusion_tag("pages\include\detail_similar.html")
+@register.inclusion_tag("pages/include/detail_similar.html")
 def similar_tag(post):
     similar_posts = post.topic.post_topic.select_related('author','author__profile').exclude(id=post.id).filter(active=True)[:8]
     return {"similar_posts":similar_posts}
