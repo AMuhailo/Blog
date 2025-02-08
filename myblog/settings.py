@@ -58,7 +58,7 @@ INSTALLED_APPS = [
     'account.apps.AccountConfig',
     'action.apps.ActionConfig',
     
-    
+   
 ]
 
 AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend',
@@ -108,7 +108,7 @@ DATABASES = {
         'PASSWORD':env('PASSWORD')
     }
 }
-POSTGRES_LOCALLY = False
+POSTGRES_LOCALLY = True
 if ENVIRONMENT == 'production' or POSTGRES_LOCALLY == True:
     DATABASES['default'] = dj_database_url.parse(env("DATABASE_URL"))
 # Password validation
