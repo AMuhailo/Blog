@@ -42,7 +42,7 @@ class DashBoardListView(ListView):
 
 class PostListView(ListView):
     model = Post
-    template_name = 'pages\post_lists.html'
+    template_name = 'pages/post_lists.html'
     context_object_name = 'posts'
     
     def get_queryset(self):
@@ -73,7 +73,7 @@ class PostListView(ListView):
 class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
     form_class = CreatePost
-    template_name = 'forms\createpost.html'
+    template_name = 'forms/createpost.html'
     success_url = reverse_lazy('blogs:post_list_view_url')
     def form_valid(self, form):
         new_post = form.save(commit = False)
@@ -86,7 +86,7 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 class PostDetailView(DetailView):
     model = Post
     context_object_name = 'post'
-    template_name = 'pages\detail.html'
+    template_name = 'pages/detail.html'
     def get_object(self, queryset = ...):
         queryset = self.model.objects.select_related('author','author__profile','topic')
         return get_object_or_404(queryset,
@@ -108,7 +108,7 @@ class PostDetailView(DetailView):
 class PostUpdateView(LoginRequiredMixin, UpdateView):
     model = Post
     context_object_name = 'post'
-    template_name = 'forms\createpost.html'
+    template_name = 'forms/createpost.html'
     fields = ['title', 'description']
     def get_object(self, queryset = ...):
         queryset = self.model.objects.select_related('author','author__profile','topic')
@@ -118,7 +118,7 @@ class PostUpdateView(LoginRequiredMixin, UpdateView):
     
     def form_valid(self, form):
         form.save()
-        return render(self.request, 'pages\detail.html', {"post":self.get_object(),
+        return render(self.request, 'pages/detail.html', {"post":self.get_object(),
                                                           'form': CreatePost(instance=self.get_object()),
                                                           'comment_form': CommentPost(),
                                                           'share_form': SharePost()})
@@ -201,7 +201,7 @@ def like_post(request, post_id):
             create_action(request.user, 'liked', post)
         else:
             post.like_user.add(request.user)
-    return render(request,'snippers\like.html',{"post":post})
+    return render(request,'snippers/like.html',{"post":post})
         
         
         
