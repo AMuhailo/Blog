@@ -33,7 +33,7 @@ if ENVIRONMENT == 'development':
     DEBUG = True
 else:
     DEBUG = False
-ALLOWED_HOSTS = ['inspirehub.up.railway.app' , 'localhost','127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','inspirehub.up.railway.app' ]
 CSRF_TRUSTED_ORIGINS = ['https://inspirehub.up.railway.app']
 INTERNAL_IPS = [
     "127.0.0.1",
