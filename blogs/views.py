@@ -31,7 +31,7 @@ class DashBoardListView(ListView):
         self.most_view = list(Post.objects.filter(id__in = posts_id))
         self.most_view.sort(key=lambda x:posts_id.index(x.id))
 
-        return self.model.objects.filter(active = True)
+        return self.model.objects.filter(active = True).select_related('author','author__profile','topic').prefetch_related('like_user')
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
