@@ -223,7 +223,10 @@ def share_post(request, post_slug, post_id):
         if form.is_valid():
             cd = form.cleaned_data
             post_url = request.build_absolute_uri(post.get_absolute_url())
-            send_message.delay(post.id, request.user.email, cd['message'], cd['to'])
+            subject = f'Post about {post.title}'
+            message = f'{message}\n'\
+                    f"URL{post_url}"
+            send_mail(subject,message,request.user.email, [cd'to'])
             return redirect(post.get_absolute_url())
     else:
         form = SharePost()
