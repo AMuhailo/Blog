@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.views.generic.base import TemplateResponseMixin
 from django.shortcuts import get_object_or_404, render, redirect
 from django.contrib.auth.models import User
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.db.models import Count
 from django.contrib.auth.decorators import login_required
 from action.utils import create_action
@@ -16,7 +16,7 @@ from .forms import RegisterForm, ProfileEditForm, UserDataEditForm
 class RegisterUser(FormView):
     form_class = RegisterForm
     template_name = 'registration/register.html'
-    success_url = 'login'
+    success_url = reverse_lazy('login')
     
     def form_valid(self, form):
         cd = form.cleaned_data

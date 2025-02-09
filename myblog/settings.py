@@ -64,8 +64,7 @@ INSTALLED_APPS = [
     'blogs.apps.BlogsConfig',
     'account.apps.AccountConfig',
     'action.apps.ActionConfig',
-    
-   
+    'django_celery_results',
 ]
 
 AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend',
