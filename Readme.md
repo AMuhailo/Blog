@@ -31,4 +31,20 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
+
+## 📊 Launch Celery Worker
+- **Open new terminal for launch Celery**
+```bash
+celery -A myblog worker -E -i INFO
+or 
+celery -A myblog worker --pool=solo --loglevel=info
+```
+- **Open new terminal for launch Flower**
+```bash
+celery -A myblog.celery_app flower
+```
+- **Open new terminal for launch Beat**
+```bash
+celery -A myblog beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
+```
 ## 👨‍💻 Author: Mikhail Ishkov
