@@ -1,6 +1,6 @@
 # 📝 Django Blog
-![Django](https://img.shields.io/badge/Django-4.2-blue?style=for-the-badge) 
-![Python](https://img.shields.io/badge/Python-3.10-yellow?style=for-the-badge)
+![Django](https://img.shields.io/badge/Django-5.1.6-blue?style=for-the-badge) 
+![Python](https://img.shields.io/badge/Python-3.12-yellow?style=for-the-badge)
 
 ## 🚀 Functionality
 ✔️ User registration
