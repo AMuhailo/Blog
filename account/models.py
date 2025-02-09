@@ -1,12 +1,13 @@
 from django.db import models
 from django.contrib.auth import get_user_model
 from django.conf import settings
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
 class Profile(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to = 'profile/', null = True, blank = True)
+    image = CloudinaryField(null = True, blank = True)
     birthday = models.DateField(blank = True, null = True)
     
     def __str__(self):

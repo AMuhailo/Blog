@@ -5,6 +5,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.utils.text import slugify
 from django.urls import reverse
+from cloudinary.models import CloudinaryField
 # Create your models here.
 
 class Topic(models.Model):
@@ -89,7 +90,7 @@ class ItemContent(models.Model):
 class Text(ItemContent):
     body = models.TextField()
 class Image(ItemContent):
-    image = models.FileField(upload_to = 'content/image/')
+    image = CloudinaryField()
 class Video(ItemContent):
     video = models.URLField()
     

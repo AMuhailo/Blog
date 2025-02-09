@@ -17,9 +17,18 @@ from .models import Comments, Topic, Post, Content
 from .forms import CommentPost, CreatePost, SharePost
 
 # Create your views here.
-
-r = redis.Redis(settings.REDIS_HOST, port = settings.REDIS_PORT, db = settings.REDIS_DB)
-
+if settings.REDIS_URL:
+    r = redis.Redis.from_url(settings.REDIS_URL)
+else:
+    r = redis.Redis(settings.REDIS_HOST, port = settings.REDIS_PORT , db= settings.REDIS_DB)
+    
+    
+try:
+    r.ping()
+    print("Redis connected.")
+except redis.ConnectionError:
+    print("Redis connected is a bad.")
+    
 class DashBoardListView(ListView):
     model = Post
     template_name = 'dashboard.html'

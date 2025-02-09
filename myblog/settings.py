@@ -18,9 +18,13 @@ env = Env()
 Env.read_env()
 ENVIRONMENT = env('ENVIRONMENT', default='production')
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+#Cloudinary imports 
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
@@ -28,10 +32,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if ENVIRONMENT == 'development':
-    DEBUG = True
-else:
+PRODUCTION_CUUSTOMED = False
+
+if ENVIRONMENT == 'production' or PRODUCTION_CUUSTOMED == True :
     DEBUG = False
+
+else:
+    DEBUG = True
+
 ALLOWED_HOSTS = ['localhost', '127.0.0.1','inspirehub.up.railway.app' ]
 CSRF_TRUSTED_ORIGINS = ['https://inspirehub.up.railway.app']
 INTERNAL_IPS = [
@@ -98,7 +106,14 @@ WSGI_APPLICATION = 'myblog.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-if ENVIRONMENT == "development":
+
+
+if ENVIRONMENT == "production" or PRODUCTION_CUUSTOMED==True:
+    import dj_database_url
+    DATABASES = {
+            'default':dj_database_url.parse(env("DATABASE_URL"))
+        }
+else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
@@ -107,11 +122,6 @@ if ENVIRONMENT == "development":
             'PASSWORD':'test_admin'
         }
     }
-else:
-    import dj_database_url
-    DATABASES = {
-            'default':dj_database_url.parse(env("DATABASE_URL"))
-        }
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
@@ -151,18 +161,14 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MEDIA_URL = 'media/'
-if ENVIRONMENT == "development":
-    MEDIA_ROOT = BASE_DIR / 'media'
-else:
-    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-    
-    
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': env('CLOUD_NAME'),
-    'API_KEY': env('CLOUD_API_KEY'),
-    'API_SECRET': env('CLOUD_API_SECRET')
-}
+CLOUDINARY_URL=env('CLOUDINARY_URL')
 
+if ENVIRONMENT == "production" or PRODUCTION_CUUSTOMED==True:
+    cloudinary.config(cloudinary_url=CLOUDINARY_URL)
+    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+else:
+    MEDIA_ROOT = BASE_DIR / 'media'
+    
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
@@ -174,25 +180,29 @@ EMAIL_HOST_USER = env('EMAIL_HOST_USER')
 
 LOGIN_REDIRECT_URL = 'dashboard_list_view_url'
 LOGOUT_REDIRECT_URL = 'dashboard_list_view_url'
-if ENVIRONMENT == 'development':
+REDIS_URL=None
+#REDIS CONNECTED
+if ENVIRONMENT == "production" or PRODUCTION_CUUSTOMED==True:    
+    REDIS_URL = env('REDIS_URL')
+else:
     REDIS_HOST = 'localhost'
     REDIS_PORT = 6379
     REDIS_DB = 0
     
-else:
-    REDIS_HOST = env('REDIS_HOST')
-    REDIS_PORT = env('REDIS_PORT')
-    REDIS_DB = env('RAILWAY_RUN_UID')
-
-
+    
+#CELERY CONNECTED
 CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
 CELERY_TIMEZONE = 'Europe/Kyiv'
-if ENVIRONMENT == 'development':
-    CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
-else:
+
+if ENVIRONMENT == "production" or PRODUCTION_CUUSTOMED==True: 
     CELERY_BROKER_URL = env('REDIS_URL')
+else:
+    CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
     
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERYD_FORCE_EXECV = True
+
+
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
