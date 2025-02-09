@@ -156,9 +156,9 @@ else:
     MEDIA_ROOT = BASE_DIR / 'media'
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME':env('CLOUD_NAME'),
-    'API_KEY':env('CLOUD_API_KEY'),
-    'API_SECRET':env('CLOUD_API_SECRET'),
+    'CLOUD_NAME': env('CLOUD_NAME'),
+    'API_KEY': env('CLOUD_API_KEY'),
+    'API_SECRET': env('CLOUD_API_SECRET')
 }
 
 # Default primary key field type
