@@ -17,9 +17,8 @@
 - **Celery + Flower + Beat**
 - **Cloudinary**
 - **Docker**
-- **Railway**
 
-## 📌 Встановлення та запуск
+## 📌 Installation and launch
 ```bash
 git clone https://github.com/AMuhailo/Blog.git
 cd Blog
@@ -31,3 +30,5 @@ venv\Scripts\activate  # для Windows
 pip install -r requirements.txt 
 python manage.py migrate
 python manage.py runserver
+```
+## 👨‍💻 Author: Mikhail Ishkov
