@@ -224,9 +224,9 @@ def share_post(request, post_slug, post_id):
             cd = form.cleaned_data
             post_url = request.build_absolute_uri(post.get_absolute_url())
             subject = f'Post about {post.title}'
-            message = f'{message}\n'\
+            message = f'{cd['message']}\n'\
                     f"URL{post_url}"
-            send_mail(subject,message,request.user.email, [cd'to'])
+            send_mail(subject,message,request.user.email, [cd['to']])
             return redirect(post.get_absolute_url())
     else:
         form = SharePost()
