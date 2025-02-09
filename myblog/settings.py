@@ -202,7 +202,8 @@ else:
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERYD_FORCE_EXECV = True
-
+CELERY_RESULT_BACKEND = 'django-db'
+CELERY_RESULT_EXTENDED = True
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
